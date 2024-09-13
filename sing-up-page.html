@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multilevel Signup Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Signup Form</h2>
+
+        <!-- Step 1: Choose if freelancer or client -->
+        <div class="form-group">
+            <label for="user-type">Are you a freelancer or a client?</label>
+            <select id="user-type">
+                <option value="" disabled selected>Select one</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="client">Client</option>
+            </select>
+        </div>
+
+        <!-- Step 2: Basic Information (common for both) -->
+        <div id="basic-info" class="hidden">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+
+            <div class="form-group">
+                <label for="number">Phone no.</label>
+                <input type="tel" id="number" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+        </div>
+
+        <!-- Step 3a: Freelancer specific information -->
+        <div id="freelancer-info" class="hidden">
+            <div class="form-group">
+                <label for="certificates">Certificates</label>
+                <textarea id="certificates" placeholder="List your certificates"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education</label>
+                <input type="text" id="education" placeholder="Enter your education">
+            </div>
+
+            <div class="form-group">
+                <label for="expertise">Expertise</label>
+                <select id="expertise">
+                    <option value="" disabled selected>Select your expertise</option>
+                    <option value="web-developer">Web Developer</option>
+                    <option value="graphic-designer">Graphic Designer</option>
+                    <option value="seo-expert">SEO Expert</option>
+                    <option value="content-writer">Content Writer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience</label>
+                <select id="experience">
+                    <option value="" disabled selected>Select your experience</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="currently-working">Currently Working</option>
+                </select>
+            </div>
+
+            <!-- Step 3b: Experience details (only for Currently Working) -->
+            <div id="working-info" class="row hidden">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="role">Current Role</label>
+                        <input type="text" id="role" placeholder="Enter your role">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="formFile">Upload your Profile Picture</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button id="submit-btn" class="hidden">Submit</button>
+    </div>
+
+    <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
+    <script src="js/signin.js"></script>
+
+</body>
+
+</html>

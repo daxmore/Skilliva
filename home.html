@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Skilliva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3">
+      <a class="navbar-brand fw-bold txt-3xl" href="home.html">SKilliva</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+        <div class="d-flex align-items-center w-100 flex-grow-1">
+          <!-- Responsive search input wrapped in a column -->
+          <div class="col-12 col-lg-6 d-flex">
+            <input class="form-control search-input me-2 w-100" type="search" placeholder="Search Here..."
+              aria-label="Search">
+          </div>
+        </div>
+        <div class="d-flex align-items-center ecgap">
+          <!-- Explore Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary explore-btn dropdown-toggle" type="button" id="exploreDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Explore
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+              <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
+              <!-- Nested Dropdown for Hiring -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="hiringDropdown"
+                  data-bs-toggle="dropdown">Hiring</a>
+                <ul class="dropdown-menu" aria-labelledby="hiringDropdown">
+                  <li><a class="dropdown-item" href="#">Jobs</a></li>
+                  <li><a class="dropdown-item" href="#">Freelancing</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="webinar.html">Webinar</a></li>
+              <li><a class="dropdown-item" href="partnership.html">Partnership</a></li>
+              <li><a class="dropdown-item" href="coursesPage.html">Courses</a></li>
+            </ul>
+          </div>
+
+          <a href="coursesPage.html">
+            <button class="btn courses-btn me-3" style="border-radius: 5px !important;">Courses</button>
+          </a>
+
+          <!-- Profile Image with Dropdown -->
+          <div class="dropdown">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1699626665796-e9151c5ad3ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8eEh4WVRNSExnT2N8fGVufDB8fHx8fA%3D%3D"
+              class="profile-icon dropdown-toggle" alt="Profile Image" id="profileDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" href="freelancer profile.html"><i class="fas fa-user me-2"></i>
+                  Profile</a></li>
+              <li><a class="dropdown-item" href="adminDashboard.html"><i class="fas fa-tachometer-alt me-2"></i>
+                  Dashboard</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-user-friends me-2"></i> Refer a
+                  Friend</a></li>
+              <li><a class="dropdown-item" href="clientRank.html"><i class="fa-solid fa-ranking-star"></i>
+                  Ranking</a></li>
+              <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog me-2"></i>
+                  Settings</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>
+                  Help</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>
+                  Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Secondary navbar links section -->
+    <div class="container navbar-links d-lg-block d-none">
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#">Marketing</a>
+          <a href="#">Design & Graphic</a>
+          <a href="#">Development</a>
+          <a href="#">Content Writing</a>
+          <a href="#">Public Relations</a>
+          <a href="#">Video Editing</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">Copywriting</a>
+          <a href="#">Photography</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toggle button for secondary links on smaller screens -->
+    <div class="container navbar-links d-lg-none">
+      <button class="btn btn-secondary w-100 my-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#secondaryLinks" aria-expanded="false" aria-controls="secondaryLinks">
+        More Services
+      </button>
+      <div class="collapse" id="secondaryLinks">
+        <div class="text-center">
+          <a href="#" class="d-block my-2">Marketing</a>
+          <a href="#" class="d-block my-2">Design & Graphic</a>
+          <a href="#" class="d-block my-2">Development</a>
+          <a href="#" class="d-block my-2">Content Writing</a>
+          <a href="#" class="d-block my-2">Public Relations</a>
+          <a href="#" class="d-block my-2">Video Editing</a>
+          <a href="#" class="d-block my-2">UI/UX Design</a>
+          <a href="#" class="d-block my-2">Copywriting</a>
+          <a href="#" class="d-block my-2">Photography</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- hero secction -->
+  <header class="header">
+    <h1 class="header-head">Unlock Your Potential</h1>
+    <h1 class="header-head">with Skilliva</h1>
+    <p class="header-paraghraph">Find Jobs, Learn Skills, and Connect with Top Freelancers</p>
+  </header>
+
+  <section>
+    <!-- cards -->
+    <section class="gigs-section">
+      <div class="container">
+        <h2 class="font-family-whait">The Gigs You Might Like:</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4" style="background: #f7f7f7; color: #000;">
+              <div class="row g-0">
+                <div
+                  class="col-md-4 bg-secondary text-center text-light d-flex align-items-center justify-content-center">
+                  <img src="assests/images/gige2.jpg" alt="" class="card-img" style="height: 100%;
+              width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-subtitle text-primary">Web Developer</h6>
+                    <h5 class="card-title" style="text-align: left;">Sonarghare khushal</h5>
+                    <p class="card-text">Proficient in modern web technologies including HTML, CSS, JavaScript, and
+                      frameworks such as React and Angular.</p>
+                    <a href="#" class="card-link">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-4" style="background: #f7f7f7; color: #000;">
+              <div class="row g-0">
+                <div
+                  class="col-md-4 bg-secondary text-center text-light d-flex align-items-center justify-content-center">
+                  <img src="assests/images/gige1.jpg" alt="" class="card-img" style="height: 100%;
+              width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-subtitle text-success">Graphic Designer</h6>
+                    <h5 class="card-title" style="text-align: left;">More Dax</h5>
+                    <p class="card-text">I am a skilled Graphic Designer with a strong background in visual design and a
+                      knack for transforming ideas into captivating visuals.</p>
+                    <a href="#" class="card-link">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="verified-pro-services">
+      <div class="container">
+        <h2 class="font-family-whait">Verified Pro services:</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4" style="background: #f7f7f7; color: #000;">
+              <div class="row g-0">
+                <div
+                  class="col-md-4 bg-secondary text-center text-light d-flex align-items-center justify-content-center">
+                  <img src="assests/images/digital marketing.jpg" alt="" class="card-img" style="height: 100%;
+              width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-subtitle text-primary">Digital Marketer</h6>
+                    <h5 class="card-title" style="text-align: left;">Shrivastav Vansh</h5>
+                    <p class="card-text">As a passionate and results-driven Digital Marketer, I specialize in creating
+                      and
+                      executing data-driven marketing strategies to enhance brand visibility.</p>
+                    <a href="#" class="card-link">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-4" style="background: #f7f7f7; color: #000;">
+              <div class="row g-0">
+                <div
+                  class="col-md-4 bg-secondary text-center text-light d-flex align-items-center justify-content-center">
+                  <img src="assests/images/mobile dev.webp" alt="" class="card-img" style="height: 100%;
+              width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h6 class="card-subtitle text-success">Mobile App Developer</h6>
+                    <h5 class="card-title" style="text-align: left;">Mandaliya Raj</h5>
+                    <p class="card-text">Passionate Mobile App Developer with expertise in designing and developing
+                      high-quality applications for iOS and Android platforms.</p>
+                    <a href="#" class="card-link">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- jumbotron -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4 fw-bolder txt-4xl cen">Get Started with Skilliva Today.</h1>
+        <p class="lead">Unlock your potential with expert-led courses, job opportunities, and freelance projects. Sign
+          up now!</p>
+        <a href="loginpage.html" class="btn btn-teal btn-lg" style="border-radius: 5px;">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- inspire gallery -->
+  <section>
+    <section>
+      <h1 class="txt-4xl fw-bolder">Get Inspired By Others' Work</h1>
+      <!-- Gallery -->
+      <div class="gallery">
+        <ul class="videos"></ul>
+      </div>
+    </section>
+
+    <!-- Lightbox for Video Preview -->
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="details">
+            <i class="uil uil-camera"></i>
+            <span>Video Preview</span>
+          </div>
+          <div class="buttons">
+            <i class="close-icon uil uil-times"></i>
+          </div>
+        </header>
+        <div class="preview-video">
+          <div class="video">
+            <video controls alt="preview-video"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="conus">Contact Us</h5>
+          <form class="d-flex my-4">
+            <input type="email" class="form-control" placeholder="Enter Your Email Here..." aria-label="Email">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Graphics & Design</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">End-To-End Projects</a></li>
+            <li><a href="#">Music & Audio</a></li>
+            <li><a href="#">Video & Animation</a></li>
+            <li><a href="#">Writing & Translation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Guide</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">How To Hire</a></li>
+            <li><a href="#">How To Get A Job</a></li>
+            <li><a href="#">How To Get An Internship</a></li>
+            <li><a href="#">How To Post A Project</a></li>
+            <li><a href="#">Payment Procedure</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>About</h5>
+          <ul class="list-unstyled">
+            <li><a href="contactus.html">About Us</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="partnership.html">Partnerships</a></li>
+            <li><a href="#">Invite a Friend</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+
+</html>

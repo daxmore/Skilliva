@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin-top: 30px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: #495057;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .order-summary {
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f1f3f5;
+            margin-bottom: 30px;
+        }
+
+        .secure-icon {
+            width: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .payment-option,
+        .billing-address {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-option label {
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-radius: 6px;
+            border: 1px solid #ced4da;
+            padding: 12px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-control:focus {
+            border: #136f63;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+            outline: none;
+        }
+
+        .btn-teal {
+            background-color: #136f63;
+            color: #ffffff;
+            font-weight: 500;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-teal:hover {
+            background-color: #136f63;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            color: #ffffff;
+            font-weight: 500;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+        .list-unstyled li {
+            padding: 5px 0;
+        }
+
+        .form-check-label {
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mb-4">Payment Information</h1>
+
+        <!-- Payment Options Section -->
+        <div class="payment-option">
+            <h4>Select Payment Method</h4>
+            <div class="mb-3">
+                <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                <label for="creditCard">Credit/Debit Card</label>
+                <div class="mt-3">
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cardName" class="form-label">Cardholder Name</label>
+                            <input type="text" class="form-control" id="cardName">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="expiryDate" class="form-label">Expiry Date (MM/YY)</label>
+                            <input type="text" class="form-control" id="expiryDate">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-option" style="display: flex; align-items: center;">
+                <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+                <label for="paypal">Pay with PayPal</label>
+                <button type="button" class="btn btn-teal mt-0" style="margin-left: 2rem;">Pay with PayPal</button>
+            </div>
+        </div>
+
+        <!-- Billing Address Section -->
+        <div class="billing-address mb-4">
+            <h4>Billing Address</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="mb-3">
+                    <label for="address1" class="form-label">Address Line 1</label>
+                    <input type="text" class="form-control" id="address1">
+                </div>
+                <div class="mb-3">
+                    <label for="address2" class="form-label">Address Line 2 (optional)</label>
+                    <input type="text" class="form-control" id="address2">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="state" class="form-label">State/Province</label>
+                        <input type="text" class="form-control" id="state">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="zip" class="form-label">Zip/Postal Code</label>
+                        <input type="text" class="form-control" id="zip">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country">
+                    </div>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="sameAsShipping">
+                    <label class="form-check-label" for="sameAsShipping">Same as shipping address</label>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h4>Order Summary</h4>
+            <ul class="list-unstyled">
+                <li>Item 1: $10.00</li>
+                <li>Item 2: $15.00</li>
+                <li>Subtotal: $25.00</li>
+                <li>Tax: $2.50</li>
+                <li>Shipping: $5.00</li>
+                <li><strong>Total Amount: $32.50</strong></li>
+            </ul>
+        </div>
+
+        <!-- Review & Submit Section -->
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary">Review Order</button>
+            <button type="submit" class="btn btn-teal">Complete Purchase</button>
+        </div>
+
+        <!-- Security Badge -->
+        <div class="mt-4">
+            <img src="https://via.placeholder.com/24x24.png?text=S" alt="Secure" class="secure-icon">
+            <span>Secure Payment</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

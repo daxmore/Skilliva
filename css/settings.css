@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+/* Custom Color */
+.navbar-custom {
+    background-color: #136f63;
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+
+.nav-link.active {
+    color: #ffffff;
+    background-color: #136f63;
+}
+
+.nav-link {
+    color: #136f63;
+}
+
+.nav-link:hover {
+    color: #0e5c51;
+}
+
+.btn-custom-primary {
+    background-color: #136f63;
+    border-color: #136f63;
+    color: #ffffff;
+}
+
+.btn-custom-secondary {
+    background-color: #f8f9fa;
+    border-color: #d6d6d6;
+}
+
+.btn-custom-secondary:hover {
+    background-color: #e2e6ea;
+    border-color: #d6d6d6;
+}
