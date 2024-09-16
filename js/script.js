@@ -72,11 +72,11 @@ function loadWebinars() {
         const webinarCard = `
             <div class="col-lg-4 col-md-6">
                 <div class="webinar-card card">
-                    <img src="${webinar.image}" alt="Webinar Image" class="webinar-img">
+                    <img src="₹{webinar.image}" alt="Webinar Image" class="webinar-img">
                     <div class="card-body text-center">
                         <h5 class="card-title" style="font-size: 1.5rem;">${webinar.title}</h5>
                         <p>Date: ${webinar.date} | Time: ${webinar.time}</p>
-                        <a href="${webinar.link}" class="btn btn-teal">Register Now</a>
+                        <a href="₹{webinar.link}" class="btn btn-teal">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,6 @@ function loadWebinars() {
         container.innerHTML += webinarCard;
     });
 }
-
 // Call the function to load webinars when the page is ready
 document.addEventListener("DOMContentLoaded", loadWebinars);
 
@@ -92,82 +91,82 @@ document.addEventListener("DOMContentLoaded", loadWebinars);
 // sample data for Courses
 const popularCourses = [
     {
-        title: "Course 1",
+        title: "App Development",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "9h 42m",
         level: "Medium",
-        price: "$34.26",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹3400.00",
+        imgSrc: "assests/images/app dev.jpg"
     },
     {
-        title: "Course 2",
+        title: "Graphic designer",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "10h 30m",
         level: "Medium",
-        price: "$39.99",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹3949.99",
+        imgSrc: "assests/images/graphic designer.png"
     },
     {
-        title: "Course 3",
+        title: "Virtual Assistent",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "8h 20m",
         level: "Advanced",
-        price: "$29.99",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹2900.99",
+        imgSrc: "assests/images/AI.jpeg"
     }
 ];
 
 const trendingCourses = [
     {
-        title: "Course 4",
+        title: "Digital Marketing",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "7h 15m",
         level: "Beginner",
-        price: "$25.00",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹2500.00",
+        imgSrc: "assests/images/marketing.jpg"
     },
     {
-        title: "Course 5",
+        title: "Video Editor",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "6h 30m",
         level: "Medium",
-        price: "$28.50",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹1800.50",
+        imgSrc: "assests/images/video-editor.jpg"
     },
     {
-        title: "Course 6",
+        title: "Translateion Services",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "12h 10m",
         level: "Advanced",
-        price: "$42.00",
-        imgSrc: "https://via.placeholder.com/200"
+        price: "₹1440.00",
+        imgSrc: "assests/images/translation.jpg"
     }
 ];
 
 const freeCourses = [
     {
-        title: "Course 7",
+        title: "Content Writing",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "4h 30m",
         level: "Beginner",
         price: "Free",
-        imgSrc: "https://via.placeholder.com/200"
+        imgSrc: "assests/images/content.jpg"
     },
     {
-        title: "Course 8",
+        title: "UX/UI designer",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "5h 45m",
         level: "Medium",
         price: "Free",
-        imgSrc: "https://via.placeholder.com/200"
+        imgSrc: "assests/images/ux-ui.jpg"
     },
     {
-        title: "Course 9",
+        title: "Web Development",
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry...",
         duration: "6h 20m",
         level: "Advanced",
         price: "Free",
-        imgSrc: "https://via.placeholder.com/200"
+        imgSrc: "assests/images/web.webp"
     }
 ];
 
@@ -175,7 +174,7 @@ function createCourseCard(course) {
     return `
                 <div class="col-md-4">
                     <div class="course-card">
-                        <img src="${course.imgSrc}" alt="Course Image">
+                        <img src="${course.imgSrc}" alt="Course Image" style="object-fit:cover;">
                         <div class="course-card-body">
                             <h5 class="course-title">${course.title}</h5>
                             <p class="course-description">${course.description}</p>

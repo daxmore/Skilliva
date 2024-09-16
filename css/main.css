@@ -727,8 +727,8 @@ input:focus {
     }
 
     /* custon css */
-    .txt-15 {
-        font-size: 3rem !important;
+    .txt-2 {
+        font-size: 2.5rem !important;
         letter-spacing: -2px;
     }
 
@@ -766,5 +766,14 @@ input:focus {
     /* paetnership page */
     .partnership-section h2 {
         font-size: 2rem;
+    }
+
+    /* courses section */
+    .all-courses h2{
+        font-size: 3rem !important;
+    }
+    .jumbotron-style h2{
+        font-size: 2rem !important;
+        letter-spacing: 0.5px;
     }
 }

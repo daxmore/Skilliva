@@ -1,23 +1,23 @@
 // Video data array
 const videosData = [
-    { src: "assests/videos/design1.mp4" },
-    { src: "assests/videos/design2.mp4" },
-    { src: "assests/videos/design3.mp4" },
-    { src: "assests/videos/design4.mp4" },
-    { src: "assests/videos/design5.mp4" },
-    { src: "assests/videos/design6.mp4" },
-    { src: "assests/videos/logo animation.mp4" },
-    { src: "assests/videos/freelancer1.mp4" },
-    { src: "assests/videos/freelancer2.mp4" },
-    { src: "assests/videos/freelancer3.mp4" },
-    { src: "assests/videos/freelancer4.mp4" },
-    { src: "assests/videos/video editing1.mp4" },
-    { src: "assests/videos/video editing2.mp4" },
-    { src: "assests/videos/video editing4.mp4" },
-    { src: "assests/videos/presentation 1.mp4" },
-    { src: "assests/videos/animation 1.mp4" },
-    { src: "assests/videos/presentation 2.mp4" },
-    { src: "assests/videos/graphics 1.mp4" }
+    { src: "https://cdn.dribbble.com/userupload/14090638/file/original-8bb2193fbab4f9b1cac096f86b611e99.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/16207455/file/original-3bd719925563525cbeb6d0a0ed448cb1.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/11569530/file/original-fad0d87860c4f62e71011b53136c47a4.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/9992722/file/original-d11bc2c6657836f7e0fe230683e76e89.mp4" },
+    { src: "https://cdn.cuberto.com/cb/projects/flipaclip/cover.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/12500788/file/original-d0d5902e92e956768457c9f2997ed5d1.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/14574840/file/original-6b219b015cf28e17eb1f517130b1fa4d.mp4" },
+    { src: "https://cdn.cuberto.com/cb/projects/cisco/cover.mp4" },
+    { src: "https://cdn.dribbble.com/users/702789/screenshots/17097784/media/2d898544d2f5605a1ae42bde131f2084.mp4" },
+    { src: "https://cdn.cuberto.com/cb/projects/qvino/cover.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/7664883/file/original-889ef9ae7ccb9342eaca4240e072b3d7.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/11091349/file/original-156792edb248745c26809727c24f9b0a.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/6395636/file/original-675a36ec0b8b3d8bf45cd9aabc9a7c3d.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/10671579/file/original-0ad696e7b1b94a67078e84a1cf724499.mp4" },
+    { src: "https://cdn.cuberto.com/cb/projects/magma/cover.mp4" },
+    { src: "https://cdn.cuberto.com/cb/projects/zelt/cover.mp4" },
+    { src: "https://cdn.dribbble.com/userupload/16534726/file/original-e4d114047413b4f5c8254fbe9b9b5b84.mp4" },
+    { src: "ahttps://cdn.dribbble.com/userupload/15814850/file/original-d88e90cb90725f215d44315a565a1a82.mp4" }
 ];
 
 // Get the container for videos

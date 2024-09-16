@@ -46,6 +46,16 @@ body {
     /* Darker on hover */
 }
 
+.mtb-6-3{
+    margin: 6rem 0 3rem 0;
+}
+
+.p-6{
+    padding: 0 6rem;
+}
+.bg-offhwite{
+    background: #f7f7f7 !important;
+}
 /* index css */
 /* navbar */
 .nav-heading {
@@ -984,6 +994,9 @@ header .buttons i:hover {
     /* custom css */
     .txt-2 {
         font-size: 3rem !important;
+    }
+    .p-x{
+        padding: 1rem;
     }
 
     .testimonial {

@@ -15,7 +15,7 @@
 
 <body>
 
-    <form class="container my-5 px-3 px-md-5 wth-60 w-100" action="submit_enrollment.php" method="POST">
+    <form class="container my-5 px-3 py-5 px-md-5 wth-60 w-100" action="submit_enrollment.php" method="POST">
         <h2 class="text-center mb-4">Course Enrollment Form</h2>
 
         <!-- Full Name -->
@@ -49,39 +49,8 @@
             </select>
         </div>
 
-        <!-- Subscription Plans as Cards -->
-        <div class="row text-center">
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Basic Plan</h5>
-                        <p class="card-text">Access to all course content.</p>
-                        <input type="radio" name="subscriptionPlan" value="Basic" required> Select Basic Plan
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title" style="letter-spacing: -1.4px;">Premium Plan</h5>
-                        <p class="card-text">Includes course certification.</p>
-                        <input type="radio" name="subscriptionPlan" value="Premium" required> Select Premium Plan
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Pro Plan</h5>
-                        <p class="card-text">Certification + One-on-one mentoring.</p>
-                        <input type="radio" name="subscriptionPlan" value="Pro" required> Select Pro Plan
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-teal w-100 mt-3">Enroll Now</button>
+        <a href="payment method.html"><button type="button" class="btn btn-teal w-100 mt-3">Enroll Now</button></a>
     </form>
 
     <!-- Bootstrap JavaScript Libraries -->

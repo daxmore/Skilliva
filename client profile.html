@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <!-- Brand/Logo -->
-                <a class="navbar-brand txt-3xl" href="#">SKilliva</a>
+                <a class="navbar-brand txt-3xl" href="home.html">SKilliva</a>
 
                 <!-- Toggle button for mobile devices -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dashboard</a>
+                            <a class="nav-link" href="adminDashboard.html">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Marketing & Growth</a>
@@ -45,10 +45,36 @@
                     <!-- Right side buttons -->
                     <div class="d-flex align-items-center">
                         <a href="hiring.html" class="btn hire-btn">Hire Now</a>
-                        <img src="https://images.unsplash.com/photo-1725550624010-2623171cdbd0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D"
-                            alt="User Profile" class="profile-img ms-3">
-                        <!-- Add Edit button here -->
+
+                        <!-- Profile Image with Dropdown -->
+                        <div class="dropdown ms-3">
+                            <img src="https://plus.unsplash.com/premium_photo-1699626665796-e9151c5ad3ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8eEh4WVRNSExnT2N8fGVufDB8fHx8fA%3D%3D"
+                                class="profile-icon dropdown-toggle" alt="Profile Image" id="profileDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="freelancer_profile.html"><i
+                                            class="fas fa-user me-2"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="adminDashboard.html"><i
+                                            class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-user-friends me-2"></i> Refer a
+                                        Friend</a></li>
+                                <li><a class="dropdown-item" href="clientRank.html"><i
+                                            class="fa-solid fa-ranking-star"></i> Ranking</a></li>
+                                <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog me-2"></i>
+                                        Settings</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>
+                                        Help</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>
+                                        Logout</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Edit button -->
                         <button class="btn btn-teal ms-3">Edit</button>
+                        <button class="btn btn-danger ms-1" style="font-size: 1rem !important; border-radius: 50px;">Delete</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +88,8 @@
             <img src="https://via.placeholder.com/150" alt="Client Profile Picture" class="img-fluid">
             <h1 class="display-5">Client Name</h1>
             <h4 class="lead">Expert WordPress Developer | SEO Specialist</h4>
-            <p>$50/hr | New York, USA | English, Spanish</p>
+            <p>LA, USA | English, Spanish</p>
+            <p class="text-center mb-2">Your Ranking : 120</p>
         </div>
     </section>
 

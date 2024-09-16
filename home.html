@@ -18,9 +18,9 @@
 
 <body>
 
-  <header>
+  <header class="bg-offwhite">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3">
+    <nav class="navbar navbar-expand-lg bg-offwhite px-3">
       <a class="navbar-brand fw-bold txt-3xl" href="home.html">SKilliva</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
         <div class="d-flex align-items-center w-100 flex-grow-1">
           <!-- Responsive search input wrapped in a column -->
           <div class="col-12 col-lg-6 d-flex">
-            <input class="form-control search-input me-2 w-100" type="search" placeholder="Search Here..."
+            <input class="form-control search-input me-2 w-100 my-3" type="search" placeholder="Search Here..."
               aria-label="Search">
           </div>
         </div>
@@ -60,7 +60,7 @@
           </div>
 
           <a href="coursesPage.html">
-            <button class="btn courses-btn me-3" style="border-radius: 5px !important;">Courses</button>
+            <button class="btn courses-btn me-3">Courses</button>
           </a>
 
           <!-- Profile Image with Dropdown -->
@@ -140,7 +140,7 @@
     <p class="header-paraghraph">Find Jobs, Learn Skills, and Connect with Top Freelancers</p>
   </header>
 
-  <section>
+  <section class="mtb-6-3">
     <!-- cards -->
     <section class="gigs-section">
       <div class="container">
@@ -255,14 +255,14 @@
   </section>
 
   <!-- inspire gallery -->
-  <section>
-    <section>
-      <h1 class="txt-4xl fw-bolder">Get Inspired By Others' Work</h1>
+  <section class="mtb-6-3">
+    
+      <h1 class="txt-4xl fw-bolder p-6 py-sm-0 display-sm-4 p-x txt-2">Get Inspired By Others' Work</h1>
       <!-- Gallery -->
       <div class="gallery">
         <ul class="videos"></ul>
       </div>
-    </section>
+    
 
     <!-- Lightbox for Video Preview -->
     <div class="lightbox">
@@ -278,7 +278,7 @@
         </header>
         <div class="preview-video">
           <div class="video">
-            <video controls alt="preview-video"></video>
+            <video controls alt="preview-video" loading="lazy"></video>
           </div>
         </div>
       </div>

@@ -1,16 +1,15 @@
-// Chart script
 const ctx = document.getElementById('myLineChart').getContext('2d');
 const myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        labels: ['Total Users', 'Total Courses', 'Clients', 'Freelancers', 'New Enrollments'],
         datasets: [{
-            label: 'Course Registrations',
-            data: [65, 59, 80, 81, 56, 55],
+            label: 'Growth Over Time',
+            data: [70000, 34, 45000, 15000, 1500],
             borderColor: '#136f63',
             backgroundColor: 'rgba(19, 111, 99, 0.2)',
             borderWidth: 2,
-            tension: 0.4 // Smooth the line
+            tension: 0.4
         }]
     },
     options: {
@@ -23,7 +22,17 @@ const myLineChart = new Chart(ctx, {
         },
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Category'
+                }
             }
         }
     }
