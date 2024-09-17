@@ -4,63 +4,63 @@ const webinars = [
         title: "Intro to AI in 2024",
         date: "Sept 20, 2024",
         time: "2:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/AI.jpeg",
         link: "#"
     },
     {
         title: "Web Development: The Future",
         date: "Sept 25, 2024",
         time: "10:00 AM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/web.webp",
         link: "#"
     },
     {
         title: "Data Science Essentials",
         date: "Sept 28, 2024",
         time: "1:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/data_science.webp",
         link: "#"
     },
     {
         title: "Cybersecurity Trends 2024",
         date: "Oct 1, 2024",
         time: "11:00 AM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/cyber security.png",
         link: "#"
     },
     {
         title: "Marketing Automation Tools",
         date: "Oct 5, 2024",
         time: "4:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/marketing.jpg",
         link: "#"
     },
     {
         title: "Blockchain for Business",
         date: "Oct 10, 2024",
         time: "3:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/blockchain.png",
         link: "#"
     },
     {
         title: "Cloud Computing Best Practices",
         date: "Oct 12, 2024",
         time: "2:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/cloud computing.png",
         link: "#"
     },
     {
         title: "UI/UX Design Principles",
         date: "Oct 15, 2024",
         time: "5:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/ux-ui.jpg",
         link: "#"
     },
     {
         title: "Agile Project Management",
         date: "Oct 20, 2024",
         time: "6:00 PM",
-        image: "https://via.placeholder.com/400x200",
+        image: "assests/images/agile.webp",
         link: "#"
     }
 ];
@@ -72,7 +72,7 @@ function loadWebinars() {
         const webinarCard = `
             <div class="col-lg-4 col-md-6">
                 <div class="webinar-card card">
-                    <img src="₹{webinar.image}" alt="Webinar Image" class="webinar-img">
+                    <img src="${webinar.image}" alt="Webinar Image" class="webinar-img">
                     <div class="card-body text-center">
                         <h5 class="card-title" style="font-size: 1.5rem;">${webinar.title}</h5>
                         <p>Date: ${webinar.date} | Time: ${webinar.time}</p>
