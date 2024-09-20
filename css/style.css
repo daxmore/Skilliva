@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -59,9 +66,14 @@ body {
 /* index css */
 /* navbar */
 .nav-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 .navbar-brand {
@@ -181,9 +193,16 @@ body {
 /* card section */
 .heading {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .heading h2 {
@@ -214,7 +233,8 @@ body {
 
 .card-img-top {
     height: 12rem;
-    object-fit: inherit;
+    -o-object-fit: inherit;
+       object-fit: inherit;
 }
 
 /* jumbotron */
@@ -342,7 +362,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 2px solid #006d5b;
 }
 
@@ -486,8 +507,12 @@ body {
 }
 
 .testimonial-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 2rem;
 }
 
@@ -501,7 +526,8 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -512,28 +538,44 @@ body {
 }
 
 .freelancer-jumbotron {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #00FFDE;
     border-radius: 15px;
 }
 
 .freelancer-h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 4rem;
     font-weight: 600;
 }
 
 .freelancer-jumbotron-p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.7rem;
 }
 
 .freelancer-jumbotron-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
 }
 
@@ -599,7 +641,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .txt-3xl {
@@ -631,21 +674,32 @@ body {
 
 /* Masonry image gallery styling */
 .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .gallery .videos {
     gap: 15px;
     max-width: 85%;
     margin: 40px 0;
-    columns: 3 310px;
+    -webkit-columns: 3 310px;
+       -moz-columns: 3 310px;
+            columns: 3 310px;
     list-style: none;
     padding: 0;
 }
 
 .gallery .videos .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
     overflow: hidden;
@@ -656,11 +710,17 @@ body {
 
 .gallery .videos video {
     width: 100%;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
     transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .gallery .videos .video:hover video {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /* Image lightbox styling */
@@ -690,23 +750,37 @@ body {
     border-radius: 6px;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+        -ms-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+    -webkit-transition: -webkit-transform 0.1s ease;
+    transition: -webkit-transform 0.1s ease;
+    -o-transition: transform 0.1s ease;
     transition: transform 0.1s ease;
+    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 
 .lightbox.show .wrapper {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
 }
 
 .wrapper :where(header, .details) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .wrapper header {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 header .details i {
@@ -730,6 +804,8 @@ header .buttons i {
     line-height: 40px;
     text-align: center;
     border-radius: 4px;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
 }
 
@@ -738,8 +814,12 @@ header .buttons i:hover {
 }
 
 .wrapper .preview-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 25px;
 }
 
@@ -750,7 +830,8 @@ header .buttons i:hover {
 .preview-video video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 
@@ -933,10 +1014,15 @@ header .buttons i:hover {
     }
 
     .but {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         gap: 10px;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .client-jumbotron {

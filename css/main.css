@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Georama", sans-serif;
 }
 
@@ -17,7 +25,8 @@ body {
 
 /* Custom input box shadow color on focus */
 input:focus {
-    box-shadow: 0 0 0 0.25rem #136f6380 !important;
+    -webkit-box-shadow: 0 0 0 0.25rem #136f6380 !important;
+            box-shadow: 0 0 0 0.25rem #136f6380 !important;
     border-color: #136f63 !important;
 }
 
@@ -57,7 +66,8 @@ input:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 2px solid #006d5b;
 }
 
@@ -225,14 +235,21 @@ input:focus {
 .field-card {
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 15px 0;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .field-card:hover {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
 }
 
 .field-icon img {
@@ -258,6 +275,7 @@ input:focus {
 }
 
 .jumbotron-style {
+    background: -o-linear-gradient(315deg, #8de7e2, #aef8df);
     background: linear-gradient(135deg, #8de7e2, #aef8df);
     /* Gradient background */
     border-radius: 15px;
@@ -265,7 +283,8 @@ input:focus {
     width: 100%;
     /* Full width */
     /* Maximum container width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Subtle shadow */
     padding: 3rem;
     /* Padding inside */
@@ -387,7 +406,8 @@ input:focus {
 }
 
 .object-cover {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .mtp-5 {
@@ -405,7 +425,8 @@ input:focus {
 .partnership-testimonials img {
     height: 9rem;
     width: 9rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 5rem;
 }
 
@@ -413,8 +434,12 @@ input:focus {
 .container-fluid {
     height: 100vh;
     /* Full height */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 
 .image-side {
@@ -423,9 +448,15 @@ input:focus {
 }
 
 .form-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .form-container {
@@ -468,19 +499,26 @@ input:focus {
     border: none;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .webinar-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .webinar-img {
     height: 200px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .cta-section {
@@ -585,12 +623,17 @@ input:focus {
 /* hiring block profile */
 .card-img-top {
     height: 200px !important;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffc107;
 }
 
@@ -633,7 +676,8 @@ input:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .txt-3xl {
@@ -653,7 +697,9 @@ input:focus {
 }
 
 .cdbd {
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) !important;
     color: var(--bs-card-color) !important;
     background: #fff !important;
@@ -672,7 +718,8 @@ input:focus {
 .card-img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .bg-offWhite {
@@ -690,11 +737,18 @@ input:focus {
 
 @media (max-width: 576px) {
     .con {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .wmax {
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
 
@@ -708,8 +762,12 @@ input:focus {
     }
 
     .con {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         padding-right: 1.25rem;
     }
 

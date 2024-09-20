@@ -46,11 +46,17 @@
         .mb-3-1 .form-con {
             width: 100%;
         }
+
+        @media only screen and (max-width: 600px) {
+            .w-xs-100{
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5 w-50">
+    <div class="container mt-5 w-50 w-xs-100">
         <h2 class="text-uppercase text-center mb-4">Company Information Form</h2>
         <form>
             <div class="mb-3">
